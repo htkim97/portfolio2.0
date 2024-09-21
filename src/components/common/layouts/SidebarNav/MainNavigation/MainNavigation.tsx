@@ -20,7 +20,6 @@ export default function MainNavigation({ currentTab }: { currentTab: string }) {
       </div>
       <div className={styles.spacer} />
       <div className={styles.bottom}>
-        <NavButton type="bell" />
         <GreenPlusButton />
         <ProfileImage
           src="https://picsum.photos/200"

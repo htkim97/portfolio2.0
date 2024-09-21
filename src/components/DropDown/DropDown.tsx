@@ -20,12 +20,9 @@ interface Item {
 }
 
 const test_items: Item[] = [
-  {
-    id: "1",
-    label: "긴 제목 긴 제목 긴 제목 긴 제목 긴 제목 긴 제목 긴 제목 긴 제목 ",
-  },
-  { id: "2", label: "항목2" },
-  { id: "3", label: "항목3" },
+  { id: "1",label: "프로젝트 1"},
+  { id: "2", label: "프로젝트 2" },
+  { id: "3", label: "프로젝트 3" },
 ];
 
 export default function DropDown({

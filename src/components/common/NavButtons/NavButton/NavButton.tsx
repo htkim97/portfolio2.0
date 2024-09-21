@@ -9,17 +9,16 @@ import {
 import styles from "./NavButton.module.scss";
 
 interface NavButtonProps {
-  type: "home" | "friends" | "thread" | "rooms" | "bell";
+  type:  "friends" | "thread" | "rooms" | "/";
   isSelected?: boolean;
   onClick?: () => void;
 }
 
 const iconMap = {
-  home: HomeIcon,
   friends: FriendsIcon,
   thread: ThreadIcon,
   rooms: RoomsIcon,
-  bell: BellIcon,
+  "/": HomeIcon,
 };
 
 export default function NavButton({

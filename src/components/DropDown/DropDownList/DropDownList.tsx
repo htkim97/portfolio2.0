@@ -66,7 +66,7 @@ export default function DropDownList({
   return (
     <dl>
       {items.map((item) => (
-        <Link href={`/${workspace}/${currentTab}/${item.id}`}>
+        <Link href={`/welcomeBlog/${currentTab}/${item.id}`}>
           <div key={item.id}>
             <DropDownItem
               id={item.id}

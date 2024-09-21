@@ -13,7 +13,7 @@ const pretendard = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Cocoa Talk",
+  title: "Ht's Blog",
   description: "Cocoa Talk for everyone",
 };
 

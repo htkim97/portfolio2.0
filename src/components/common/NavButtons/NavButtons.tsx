@@ -7,10 +7,10 @@ import Link from "next/link";
 import NavButton from "./NavButton/NavButton";
 import styles from "./NavButtons.module.scss";
 
-type ButtonType = "home" | "friends" | "thread" | "rooms" | "bell"; // 타입 정의
+type ButtonType = "/" | "friends" | "thread" | "rooms"; // 타입 정의
 
 const buttonTypes: { type: ButtonType; href: string }[] = [
-  { type: "home", href: "/home" },
+  { type: "/", href: "/" },
   { type: "friends", href: "/friends" },
   { type: "thread", href: "/thread" },
   { type: "rooms", href: "/rooms" },
@@ -30,7 +30,7 @@ export default function NavButtons({ currentTab }: { currentTab: string }) {
   return (
     <div className={styles.container}>
       {buttonTypes.map((button) => (
-        <Link href={`/${currentTab}/${button.type}`} key={button.type}>
+        <Link href={`/welcomeBlog/${button.type}`} key={button.type}>
           <NavButton
             type={button.type}
             isSelected={selectedType === button.type}
