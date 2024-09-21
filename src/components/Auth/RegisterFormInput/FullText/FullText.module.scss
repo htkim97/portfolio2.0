@@ -1,0 +1,35 @@
+@import '@/styles/functions.module.scss';
+
+.text {
+    width: px(492);
+    max-height: px(432);
+    padding: 0 px(24);
+    overflow-y: auto;
+}
+
+.button {
+    width: 100%;
+    height: px(40);
+    margin-top: px(32);
+    border: none;
+    border-radius: 6px;
+    background-color: var(--cocoa-green);
+    outline: none;
+    cursor: pointer;
+
+    color: var(--primary-white);
+    font-size: px(15);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+}
+
+.fullText {
+    color: var(--secondary-cool-gray-600);
+    font-size: px(15);
+    font-style: normal;
+    font-weight: 400;
+    line-height: px(20);
+    text-decoration-line: underline;
+    cursor: pointer;
+}
