@@ -7,13 +7,13 @@ export default function SubTapPage({ params }: { params: { subtab: string } }) {
   return (
     <div>
       <h1>{params.subtab}번방</h1>
-      <Notification label={"oldDate"} />
+      {/* <Notification label={"oldDate"} />
       <MessageLayout
         profileImage={""}
         username={"김현태"}
         userId={"gugu123"}
         chatContent={"코코아톡"}
-      />
+      /> */}
       <FileDropView />
     </div>
   );

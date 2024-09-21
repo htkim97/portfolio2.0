@@ -7,6 +7,7 @@ import React from "react";
 import { useSelector } from "react-redux";
 
 import styles from "./layout.module.scss";
+import Profile from "@/components/Profile/Profile";
 
 export default function TabsLayout({
   children,
@@ -23,12 +24,7 @@ export default function TabsLayout({
     <div className={styles.layoutContainer}>
       <MainNavigation currentTab={params.workspaceID} />
       {children}
-      {isOpen && <div className={styles.overlay}></div>}
-      <div
-        className={`${isMaximize ? styles.sideSearchLayerMaximize : styles.sideSearchLayer}`}
-      >
-        {isOpen && <SideSearchLayer />}
-      </div>
+      
     </div>
   );
 }

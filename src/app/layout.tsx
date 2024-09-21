@@ -24,13 +24,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={pretendard.className}>
-        <Providers>
-          <ReactQueryProvider>
-            <div>{children}</div>
-          </ReactQueryProvider>
-        </Providers>
-        <div id="portal"></div>
+      <body >
+        <Providers>   
+            <div>{children}</div>       
+        </Providers>   
       </body>
     </html>
   );

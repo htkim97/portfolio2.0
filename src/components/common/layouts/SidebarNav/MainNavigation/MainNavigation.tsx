@@ -19,14 +19,6 @@ export default function MainNavigation({ currentTab }: { currentTab: string }) {
         <NavButtons currentTab={currentTab} />
       </div>
       <div className={styles.spacer} />
-      <div className={styles.bottom}>
-        <GreenPlusButton />
-        <ProfileImage
-          src="https://picsum.photos/200"
-          size="user"
-          state="active"
-        />
-      </div>
     </nav>
   );
 }
